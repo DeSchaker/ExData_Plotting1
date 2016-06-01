@@ -25,6 +25,6 @@ mydata$Global_active_power <- as.numeric(mydata$Global_active_power)
 png(outputfile,width=480,height=480)
 
 with(mydata,plot(DateTime,Global_active_power,type="n",xlab="",ylab="Global Active Power(kilowatts)" ))
-with(mydata,lines(DateTime,Global_active_power,pch=1,cex=0.2))
+with(mydata,lines(DateTime,Global_active_power))
 
 dev.off()
